@@ -2,7 +2,7 @@
 "rounded-pentagram" is a graphing program of a parametric curve with gnuplot.
 To create this program, I referenced the following tweet.
 
-**<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">丸みを帯びた五芒星の媒介変数表示 <a href="https://t.co/qI8HCVfzJm">pic.twitter.com/qI8HCVfzJm</a></p>&mdash; 千葉大数学科18 (@chibamath18) <a href="https://twitter.com/chibamath18/status/1406756501004251136?ref_src=twsrc%5Etfw">June 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>**
+**<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">丸みを帯びた五芒星の媒介変数表示 <a href="https://t.co/qI8HCVfzJm">pic.twitter.com/qI8HCVfzJm</a></p>&mdash; 千葉大数学科18 (@chibamath18) <a href="https://twitter.com/chibamath18/status/1406756501004251136?ref_src=twsrc%5Etfw">June 20, 2021</a></blockquote>**
 
 ## Demo
 <img src="demo_2x.gif" width="450" alt="demo_2x.gif" title="demo_2x.gif">
