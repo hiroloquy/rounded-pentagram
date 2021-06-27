@@ -83,7 +83,7 @@ do for [n=0:LOOP-1:1]{
             numPNG = numPNG + 1
         }
 
-        # Get the value of time from either of txt files
+        # Get the value of time from dataTrajectory
         set yrange [*:*]    # This command enables to remove restrictions on the range of the stats command.
         stats dataTrajectory using 1 every ::i::i nooutput
         theta = STATS_max
