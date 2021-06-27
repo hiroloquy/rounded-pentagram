@@ -1,6 +1,6 @@
 # draw_trajectory.txt
 # DEG_DIV=1
-# t / Px / Py
+# t / x / y
 0.0 -1.0 -2.0
 1.0 -0.929 -1.946
 2.0 -0.855 -1.891
