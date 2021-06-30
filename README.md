@@ -7,6 +7,8 @@ To create this program, I referenced the following tweet.
 ## Demo
 <img src="demo.gif" width="450" alt="demo.gif" title="demo.gif">
 
+<img src="demo_with_circles.gif" width="450" alt="demo_with_circles.gif" title="demo_with_circles.gif">
+
 ## Parametric equations
 <img src="https://latex.codecogs.com/gif.latex?\begin{cases}&space;x&space;&=&space;2&space;\sin&space;2t&space;-&space;\cos&space;3t\\&space;y&space;&=&space;\sin&space;3t&space;-&space;2&space;\cos&space;2t&space;\end{cases}" title="\begin{cases} x &= 2 \sin 2t - \cos 3t\\ y &= \sin 3t - 2 \cos 2t \end{cases}" />
 
@@ -20,12 +22,16 @@ pause 0.001     # Adjust the drawing speed
 - On the other hand, in `pngcairo` terminal (`qtMode!=1`), you can get a lot of PNG images of the simulation.
 By using the outputted images, you can make a video or an animated GIF.
 
+- The parametric equations of the curve consist only of trigonometric functions.
+**This property makes it possible to draw rotating circles.**
+If you want to draw rotating circles with the curve, please refer to the files containing **"with_circles"** or **"with_rotating_circles"** in this repository.
+
 <!-- # Operating environment -->
 ## Requirement
 - macOS Big Sur 11.4 / Macbook Air (M1, 2020) 16GB
 - gnuplot version 5.4 patchlevel 1
 - VScode 1.56.2
-- ffmpeg 4.4
+- FFmpeg 4.4
 
 <!-- # Installation -->
  
@@ -38,20 +44,32 @@ load 'rounded_pentagram.plt'
 ```
 
 ## Note
-I made a MP4 file (demo.mp4) and an animated GIF (demo.gif) by using **ffmpeg**.
+I made a MP4 file (demo.mp4) and an animated GIF (demo.gif) by using **FFmpeg**.
 
 ### MP4
+#### Without rotating circles
 ```
 cd rounded-pentagram
 ffmpeg -framerate 60 -i png/img_%04d.png -vcodec libx264 -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -r 60 demo.mp4
 ```
+#### With rotating circles
+```
+cd rounded-pentagram
+ffmpeg -framerate 60 -i png_with_circles/img_%04d.png -vcodec libx264 -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -r 60 demo_with_circles.mp4
+```
 
 ### GIF
+#### Without rotating circles
 ```
 cd rounded-pentagram
 ffmpeg -i demo.mp4 -filter_complex "[0:v] fps=30,split [a][b];[a] palettegen [p];[b][p] paletteuse" demo.gif
 ```
- 
+#### With rotating circles
+```
+cd rounded-pentagram
+ffmpeg -i demo_with_circles.mp4 -filter_complex "[0:v] fps=30,split [a][b];[a] palettegen [p];[b][p] paletteuse" demo_with_circles.gif
+```
+
 ## Author
 * Hiro Shigeyoshi
 * Twitter: https://twitter.com/Sm_pgmf
