@@ -4,9 +4,8 @@ set angle degrees
 #=================== Parameter ====================
 # Parameters in drawing
 psJoint = 1.5       # ps = point size
-psDrop = 2
-lwLink = 3          # lw = line width
-lwTrajectory = 2
+psDrop = 2    
+lwTrajectory = 2    # lw = line width
 lcPoint = 6
 numPNG = 0
 LOOP = 3
