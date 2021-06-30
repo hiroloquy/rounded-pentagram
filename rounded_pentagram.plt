@@ -3,10 +3,9 @@ set angle degrees
 
 #=================== Parameter ====================
 # Parameters in drawing
-psJoint = 1.5       # ps = point size
-psDrop = 2    
+psPoint = 2         # ps = point size
 lwTrajectory = 2    # lw = line width
-lcPoint = 6
+lcPoint = 6         # lc = line color
 numPNG = 0
 LOOP = 3
 
@@ -68,7 +67,7 @@ print sprintf('Finish!')
 if(qtMode == 1) {
     print "Start simulation"
 } else {
-    print sprintf('Start outputting %d images ...', 2+360*DEG_DIV*LOOP)
+    print sprintf('Start outputting %d images ...', LOOP*(1+360*DEG_DIV))
 }
 
 plotRange = 4
