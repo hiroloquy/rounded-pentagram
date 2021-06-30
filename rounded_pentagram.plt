@@ -7,8 +7,7 @@ psJoint = 1.5       # ps = point size
 psDrop = 2
 lwLink = 3          # lw = line width
 lwTrajectory = 2
-lcLink = -1
-lcDrop = 6
+lcPoint = 6
 numPNG = 0
 LOOP = 3
 
@@ -90,8 +89,8 @@ do for [n=0:LOOP-1:1]{
         set title showT(theta) left offset screen -0.07, -0.01 font ', 20'
 
         plot[-plotRange:plotRange][-plotRange:plotRange] \
-            dataTrajectory using 2:3 every ::i::i with p ps psDrop pt 7 lc lcDrop, \
-            dataTrajectory using 2:3 every ::0::end(n, i) with line lw lwTrajectory lc lcDrop
+            dataTrajectory using 2:3 every ::i::i with p ps psDrop pt 7 lc lcPoint, \
+            dataTrajectory using 2:3 every ::0::end(n, i) with line lw lwTrajectory lc lcPoint
 
         if(qtMode == 1) {    
             if((n==0 && i==0) || n==LOOP-1 && i==360*DEG_DIV) {
@@ -108,6 +107,6 @@ do for [n=0:LOOP-1:1]{
 set term pngcairo size 720, 720 font 'Times'
 set output "trajectory_plot.png"
 plot[-plotRange:plotRange][-plotRange:plotRange] \
-    dataTrajectory using 2:3 every ::0::360*DEG_DIV with line lw lwTrajectory lc lcDrop
+    dataTrajectory using 2:3 every ::0::360*DEG_DIV with line lw lwTrajectory lc lcPoint
 set out
 print sprintf('Finish this program')
