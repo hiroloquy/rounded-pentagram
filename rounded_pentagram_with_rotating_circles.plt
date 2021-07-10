@@ -93,7 +93,7 @@ do for [n=0:LOOP-1:1]{
         theta = STATS_max
         set title showT(theta) left offset screen -0.07, -0.01 font ', 20'
 
-        # Circles drawing the x-axis direction of a curve, and locating on the y-axis
+        # Circles drawing x(t) and locating on the y-axis
         # x(t) = 2*sin(2*t)-cos(3*t)
         cx1_x =    0 + 2*sin(2*theta)
         cx1_y = offsetXaxisCircle + 2*cos(2*theta)
@@ -108,7 +108,7 @@ do for [n=0:LOOP-1:1]{
         set arrow 3 nohead from cx2_x, cx2_y to cx2_x, plotRange lt lcCursor lw lwCursor
         # set arrow 3 nohead from cx2_x, cx2_y to x(theta), y(theta) lt lcCursor lw lwCursor
         
-        # Circles drawing the y-axis direction of a curve, and locating on the x-axis
+        # Circles drawing y(t) and locating on the x-axis
         # y(t) = sin(3*t)-2*cos(2*t)
         cy1_x = offsetYaxisCircle + cos(3*theta)
         cy1_y =    0 + sin(3*theta)
