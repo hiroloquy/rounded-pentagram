@@ -17,8 +17,8 @@ LOOP = 3
 DEG_DIV = 1.0           # Resolution of degree, increase by 1/DEG_DIV
 roundNum = 2
 plotRange = 10          # Set the range of x/y axis [-plotRange:plotRange]
-offsetXaxisCircle = -6.5    # Offset of the center of circles plotting a curve
-offsetYaxisCircle = -6.5
+offsetXtCircle = -6.5    # Offset of the center of circles plotting a curve
+offsetYtCircle = -6.5
 
 # Select terminal type
 qtMode = 0     # ==1: qt (simulator) / !=1: png (output images for making video)
@@ -96,12 +96,12 @@ do for [n=0:LOOP-1:1]{
         # Circles drawing x(t) and locating on the y-axis
         # x(t) = 2*sin(2*t)-cos(3*t)
         cx1_x =    0 + 2*sin(2*theta)
-        cx1_y = offsetXaxisCircle + 2*cos(2*theta)
+        cx1_y = offsetXtCircle + 2*cos(2*theta)
         cx2_x = cx1_x - cos(3*theta)
         cx2_y = cx1_y - sin(3*theta)
-        set object 1 circle at 0, offsetXaxisCircle size 2 fs empty border lt lcCircle1 lw lwCircle
+        set object 1 circle at 0, offsetXtCircle size 2 fs empty border lt lcCircle1 lw lwCircle
         set object 2 circle at cx1_x, cx1_y size 1 fs empty border lt lcCircle2 lw lwCircle
-        set arrow 1 nohead from 0, offsetXaxisCircle to cx1_x, cx1_y lt lcCircle1 lw lwCircle
+        set arrow 1 nohead from 0, offsetXtCircle to cx1_x, cx1_y lt lcCircle1 lw lwCircle
         set arrow 2 nohead from cx1_x, cx1_y to cx2_x, cx2_y lt lcCircle2 lw lwCircle
         set object 3 circle at cx1_x, cx1_y size 0.1 fs solid fc lt lcCircle1 lw lwCircle front
         set object 4 circle at cx2_x, cx2_y size 0.1 fs solid fc lt lcCircle2 lw lwCircle front
@@ -110,13 +110,13 @@ do for [n=0:LOOP-1:1]{
         
         # Circles drawing y(t) and locating on the x-axis
         # y(t) = sin(3*t)-2*cos(2*t)
-        cy1_x = offsetYaxisCircle + cos(3*theta)
+        cy1_x = offsetYtCircle + cos(3*theta)
         cy1_y =    0 + sin(3*theta)
         cy2_x = cy1_x - 2*sin(2*theta)
         cy2_y = cy1_y - 2*cos(2*theta)
-        set object 5 circle at offsetYaxisCircle, 0 size 1 fs empty border lt lcCircle1 lw lwCircle 
+        set object 5 circle at offsetYtCircle, 0 size 1 fs empty border lt lcCircle1 lw lwCircle 
         set object 6 circle at cy1_x, cy1_y size 2 fs empty border lt lcCircle2 lw lwCircle
-        set arrow 4 nohead from offsetYaxisCircle, 0 to cy1_x, cy1_y lt lcCircle1 lw lwCircle
+        set arrow 4 nohead from offsetYtCircle, 0 to cy1_x, cy1_y lt lcCircle1 lw lwCircle
         set arrow 5 nohead from cy1_x, cy1_y to cy2_x, cy2_y lt lcCircle2 lw lwCircle
         set object 7 circle at cy1_x, cy1_y size 0.1 fs solid fc lt lcCircle1 lw lwCircle front
         set object 8 circle at cy2_x, cy2_y size 0.1 fs solid fc lt lcCircle2 lw lwCircle front
