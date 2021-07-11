@@ -87,7 +87,7 @@ do for [n=0:LOOP-1:1]{
         set title showT(theta) left offset screen -0.07, -0.01 font ', 20'
 
         plot[-plotRange:plotRange][-plotRange:plotRange] \
-            dataTrajectory using 2:3 every ::i::i with p ps psDrop pt 7 lc lcPoint, \
+            dataTrajectory using 2:3 every ::i::i with p ps psPoint pt 7 lc lcPoint, \
             dataTrajectory using 2:3 every ::0::end(n, i) with line lw lwTrajectory lc lcPoint
 
         if(qtMode == 1) {    
