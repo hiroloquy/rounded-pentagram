@@ -5,7 +5,7 @@ set angle degrees
 # Parameters in drawing
 psPoint = 2         # ps = point size
 lwCircle = 2        # lw = line width
-lwCursor  =2
+lwCursor = 2
 lwTrajectory = 2
 lcCursor = -1       # lc = line color
 lcPoint = 6
