@@ -72,7 +72,11 @@ ffmpeg -i demo_with_circles.mp4 -filter_complex "[0:v] fps=30,split [a][b];[a] p
 
 ## Author
 * Hiro Shigeyoshi
-* Twitter: https://twitter.com/Sm_pgmf
+* Twitter: [@hiroloquy](https://twitter.com/hirloquy)
+
+### Blog
+This article is written in detail and in Japanese. You can translate it in your language.
+https://hiroloquy.com/2021/07/11/rounded-pentagram-animation/
  
 ## License
 "rounded-pentagram" is under [Hiroloquy](https://hiroloquy.com/).
