@@ -77,7 +77,11 @@ ffmpeg -i demo_with_circles.mp4 -filter_complex "[0:v] fps=30,split [a][b];[a] p
 ### Blog
 This article is written in detail and in Japanese. You can translate it in your language.  
 https://hiroloquy.com/2021/07/11/rounded-pentagram-animation/
- 
+
+### YouTube
+http://www.youtube.com/watch?v=kD-hhFuiSmM  
+[![Rounded Pentagram: Pseudo Fourier Series Animation Using Gnuplot](http://img.youtube.com/vi/kD-hhFuiSmM/0.jpg)](http://www.youtube.com/watch?v=kD-hhFuiSmM "Rounded Pentagram: Pseudo Fourier Series Animation Using Gnuplot")
+
 ## License
 "rounded-pentagram" is under [Hiroloquy](https://hiroloquy.com/).
  
