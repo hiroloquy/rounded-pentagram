@@ -83,5 +83,5 @@ http://www.youtube.com/watch?v=kD-hhFuiSmM
 [![Rounded Pentagram: Pseudo Fourier Series Animation Using Gnuplot](http://img.youtube.com/vi/kD-hhFuiSmM/0.jpg)](http://www.youtube.com/watch?v=kD-hhFuiSmM "Rounded Pentagram: Pseudo Fourier Series Animation Using Gnuplot")
 
 ## License
-"rounded-pentagram" is under [Hiroloquy](https://hiroloquy.com/).
+"rounded-pentagram" is under [MIT license](https://github.com/hiroloquy/rounded-pentagram/blob/master/LICENSE).
  
