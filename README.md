@@ -72,7 +72,7 @@ ffmpeg -i demo_with_circles.mp4 -filter_complex "[0:v] fps=30,split [a][b];[a] p
 
 ## Author
 * Hiro Shigeyoshi
-* Twitter: [@hiroloquy](https://twitter.com/hirloquy)
+* Twitter: [@hiroloquy](https://twitter.com/hiroloquy)
 
 ### Blog
 This article is written in detail and in Japanese. You can translate it in your language.  
