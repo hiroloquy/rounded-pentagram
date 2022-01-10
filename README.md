@@ -36,7 +36,7 @@ If you want to draw rotating circles with the curve, please refer to the files c
 <!-- # Installation -->
  
 ## Usage
-```
+```sh
 git clone https://github.com/hiroloquy/rounded-pentagram.git
 cd rounded-pentagram
 gnuplot
@@ -48,24 +48,24 @@ I made a MP4 file (demo.mp4) and an animated GIF (demo.gif) by using **FFmpeg**.
 
 ### MP4
 #### Without rotating circles
-```
+```sh
 cd rounded-pentagram
 ffmpeg -framerate 60 -i png/img_%04d.png -vcodec libx264 -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -r 60 demo.mp4
 ```
 #### With rotating circles
-```
+```sh
 cd rounded-pentagram
 ffmpeg -framerate 60 -i png_with_circles/img_%04d.png -vcodec libx264 -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -r 60 demo_with_circles.mp4
 ```
 
 ### GIF
 #### Without rotating circles
-```
+```sh
 cd rounded-pentagram
 ffmpeg -i demo.mp4 -filter_complex "[0:v] fps=30,split [a][b];[a] palettegen [p];[b][p] paletteuse" demo.gif
 ```
 #### With rotating circles
-```
+```sh
 cd rounded-pentagram
 ffmpeg -i demo_with_circles.mp4 -filter_complex "[0:v] fps=30,split [a][b];[a] palettegen [p];[b][p] paletteuse" demo_with_circles.gif
 ```
