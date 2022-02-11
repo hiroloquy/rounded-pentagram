@@ -5,12 +5,22 @@ To create this program, I referenced the following tweet.
 **<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">丸みを帯びた五芒星の媒介変数表示 <a href="https://t.co/qI8HCVfzJm">pic.twitter.com/qI8HCVfzJm</a></p>&mdash; 千葉大数学科18 (@chibamath18) <a href="https://twitter.com/chibamath18/status/1406756501004251136?ref_src=twsrc%5Etfw">June 20, 2021</a></blockquote>**
 
 ## Demo
-<img src="demo.gif" width="450" alt="demo.gif" title="demo.gif">
+|![demo.gif](demo.gif)|![demo_with_circles.gif](demo_with_circles.gif)|
+|:---:|:---:|
+|**demo.gif**|**demo_with_circles.gif**|
 
-<img src="demo_with_circles.gif" width="450" alt="demo_with_circles.gif" title="demo_with_circles.gif">
+<!-- <img src="demo.gif" width="450" alt="demo.gif" title="demo.gif">
+<img src="demo_with_circles.gif" width="450" alt="demo_with_circles.gif" title="demo_with_circles.gif"> -->
 
 ## Parametric equations
-<img src="https://latex.codecogs.com/gif.latex?\begin{cases}&space;x&space;&=&space;2&space;\sin&space;2t&space;-&space;\cos&space;3t\\&space;y&space;&=&space;\sin&space;3t&space;-&space;2&space;\cos&space;2t&space;\end{cases}" title="\begin{cases} x &= 2 \sin 2t - \cos 3t\\ y &= \sin 3t - 2 \cos 2t \end{cases}" />
+<img src=
+"https://render.githubusercontent.com/render/math?math=%5Clarge+%5Cdisplaystyle+%5Cleft%5C%7B%0A%5Cbegin%7Balign%2A%7D%0Ax+%3D+2+%5Csin+2t+-+%5Ccos+3t%5C%5C%0Ay+%3D+%5Csin+3t+-+2+%5Ccos+2t%0A%5Cend%7Balign%2A%7D%0A%5Cright." 
+alt="\left\{
+\begin{align*}
+x = 2 \sin 2t - \cos 3t\\
+y = \sin 3t - 2 \cos 2t
+\end{align*}
+\right.">
 
 ## Features
 You enable to switch terminal type `qt` or `pngcairo` by using **`qtMode`**.
