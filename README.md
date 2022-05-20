@@ -9,18 +9,15 @@ To create this program, I referenced the following tweet.
 |:---:|:---:|
 |**demo.gif**|**demo_with_circles.gif**|
 
-<!-- <img src="demo.gif" width="450" alt="demo.gif" title="demo.gif">
-<img src="demo_with_circles.gif" width="450" alt="demo_with_circles.gif" title="demo_with_circles.gif"> -->
-
 ## Parametric equations
-<img src=
-"https://render.githubusercontent.com/render/math?math=%5Clarge+%5Cdisplaystyle+%5Cleft%5C%7B%0A%5Cbegin%7Balign%2A%7D%0Ax+%3D+2+%5Csin+2t+-+%5Ccos+3t%5C%5C%0Ay+%3D+%5Csin+3t+-+2+%5Ccos+2t%0A%5Cend%7Balign%2A%7D%0A%5Cright." 
-alt="\left\{
-\begin{align*}
-x = 2 \sin 2t - \cos 3t\\
-y = \sin 3t - 2 \cos 2t
-\end{align*}
-\right.">
+$$
+\left\{
+    \begin{align*}
+        x = 2 \sin 2t - \cos 3t \\
+        y = \sin 3t - 2 \cos 2t
+    \end{align*}
+\right.
+$$
 
 ## Features
 You enable to switch terminal type `qt` or `pngcairo` by using **`qtMode`**.
