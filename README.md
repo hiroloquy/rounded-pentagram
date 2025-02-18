@@ -11,7 +11,7 @@ To create this program, I referenced the following tweet.
 
 ## Parametric equations
 $$
-\left\{
+\left\\{
     \begin{align*}
         x = 2 \sin 2t - \cos 3t \\
         y = \sin 3t - 2 \cos 2t
